@@ -6,9 +6,10 @@
 //
 
 import Resolver
+
 extension DependencyRegistrationService {
-    func registerRemoteService() {
-        Resolver.register{ SearchRemoteService() as SearchServiceProtocol }
+    func registerRemoteService(){
+        Resolver.register { SearchRemoteService() as SearchServiceProtocol }
     }
 }
 

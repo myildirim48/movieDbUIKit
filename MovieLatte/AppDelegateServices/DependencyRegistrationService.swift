@@ -5,13 +5,13 @@
 //  Created by YILDIRIM on 3.01.2023.
 //
 
-import Foundation
 import Resolver
 
 final class DependencyRegistrationService: NSObject, UIApplicationDelegate {
     typealias Registration = () -> Void
     
-    private lazy var registrations : [Registration] = [registerService]
+    private lazy var registrations : [Registration] = [registerService,
+                                                       registerRemoteService]
     
     
     func application(_ application: UIApplication,
