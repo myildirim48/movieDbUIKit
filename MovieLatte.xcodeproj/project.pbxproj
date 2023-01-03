@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 55;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,25 @@
 		74F6E417296443D400795629 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74F6E415296443D400795629 /* Main.storyboard */; };
 		74F6E419296443D400795629 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74F6E418296443D400795629 /* Assets.xcassets */; };
 		74F6E41C296443D400795629 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74F6E41A296443D400795629 /* LaunchScreen.storyboard */; };
+		74F6E42A2964740B00795629 /* AppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F6E4292964740B00795629 /* AppConfig.swift */; };
+		74F6E42E29647AC500795629 /* RequestObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F6E42D29647AC500795629 /* RequestObject.swift */; };
+		74F6E43029647AF500795629 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F6E42F29647AF500795629 /* HTTPMethod.swift */; };
+		74F6E43329647B2B00795629 /* URLComponentExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F6E43229647B2B00795629 /* URLComponentExtensions.swift */; };
+		74F6E43629647B7B00795629 /* HTTPStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F6E43529647B7B00795629 /* HTTPStatus.swift */; };
+		74F6E43829647CDC00795629 /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F6E43729647CDC00795629 /* AppError.swift */; };
+		74F6E43A29647CF800795629 /* DateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F6E43929647CF800795629 /* DateFormatter.swift */; };
+		74F6E43C29647D1A00795629 /* HTTPResponseExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F6E43B29647D1A00795629 /* HTTPResponseExtension.swift */; };
+		74F6E43E29647D3700795629 /* URLSessionExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F6E43D29647D3700795629 /* URLSessionExtension.swift */; };
+		74F6E44129647D5500795629 /* NetworkLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F6E44029647D5500795629 /* NetworkLoader.swift */; };
+		74F6E44329647DEB00795629 /* TargetEndpointProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F6E44229647DEB00795629 /* TargetEndpointProtocol.swift */; };
+		74F6E44529647E3E00795629 /* BaseServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F6E44429647E3E00795629 /* BaseServiceProtocol.swift */; };
+		74F6E44729647EFD00795629 /* Requestable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F6E44629647EFD00795629 /* Requestable.swift */; };
+		74F6E44A296480BD00795629 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F6E449296480BD00795629 /* StringExtensions.swift */; };
+		74F6E44C2964823F00795629 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F6E44B2964823F00795629 /* NetworkService.swift */; };
+		74F6E44F2964A87E00795629 /* DependencyRegistrationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F6E44E2964A87E00795629 /* DependencyRegistrationService.swift */; };
+		74F6E4532964A8D600795629 /* ServiceRegistration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F6E4522964A8D600795629 /* ServiceRegistration.swift */; };
+		74F6E4552964AA3700795629 /* RemoteServiceRegistration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F6E4542964AA3700795629 /* RemoteServiceRegistration.swift */; };
+		A92F9C791844C3D8D8ED6CF6 /* Pods_MovieLatte.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7629F2D44E00E45174A2597 /* Pods_MovieLatte.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +44,27 @@
 		74F6E41B296443D400795629 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		74F6E41D296443D400795629 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		74F6E423296443F200795629 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		74F6E4292964740B00795629 /* AppConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfig.swift; sourceTree = "<group>"; };
+		74F6E42D29647AC500795629 /* RequestObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestObject.swift; sourceTree = "<group>"; };
+		74F6E42F29647AF500795629 /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
+		74F6E43229647B2B00795629 /* URLComponentExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLComponentExtensions.swift; sourceTree = "<group>"; };
+		74F6E43529647B7B00795629 /* HTTPStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPStatus.swift; sourceTree = "<group>"; };
+		74F6E43729647CDC00795629 /* AppError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppError.swift; sourceTree = "<group>"; };
+		74F6E43929647CF800795629 /* DateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatter.swift; sourceTree = "<group>"; };
+		74F6E43B29647D1A00795629 /* HTTPResponseExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPResponseExtension.swift; sourceTree = "<group>"; };
+		74F6E43D29647D3700795629 /* URLSessionExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionExtension.swift; sourceTree = "<group>"; };
+		74F6E44029647D5500795629 /* NetworkLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkLoader.swift; sourceTree = "<group>"; };
+		74F6E44229647DEB00795629 /* TargetEndpointProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TargetEndpointProtocol.swift; sourceTree = "<group>"; };
+		74F6E44429647E3E00795629 /* BaseServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseServiceProtocol.swift; sourceTree = "<group>"; };
+		74F6E44629647EFD00795629 /* Requestable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Requestable.swift; sourceTree = "<group>"; };
+		74F6E449296480BD00795629 /* StringExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
+		74F6E44B2964823F00795629 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		74F6E44E2964A87E00795629 /* DependencyRegistrationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyRegistrationService.swift; sourceTree = "<group>"; };
+		74F6E4522964A8D600795629 /* ServiceRegistration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceRegistration.swift; sourceTree = "<group>"; };
+		74F6E4542964AA3700795629 /* RemoteServiceRegistration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteServiceRegistration.swift; sourceTree = "<group>"; };
+		81FA9E21D89ADE64B32BD021 /* Pods-MovieLatte.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MovieLatte.debug.xcconfig"; path = "Target Support Files/Pods-MovieLatte/Pods-MovieLatte.debug.xcconfig"; sourceTree = "<group>"; };
+		A7629F2D44E00E45174A2597 /* Pods_MovieLatte.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MovieLatte.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E79062FB239CCF2BF9CD1585 /* Pods-MovieLatte.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MovieLatte.release.xcconfig"; path = "Target Support Files/Pods-MovieLatte/Pods-MovieLatte.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,18 +72,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A92F9C791844C3D8D8ED6CF6 /* Pods_MovieLatte.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3745BA216FDCF2477171C71F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A7629F2D44E00E45174A2597 /* Pods_MovieLatte.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		450F7F5D63F11E4C4F7A0FAC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				81FA9E21D89ADE64B32BD021 /* Pods-MovieLatte.debug.xcconfig */,
+				E79062FB239CCF2BF9CD1585 /* Pods-MovieLatte.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		74F6E403296443D400795629 = {
 			isa = PBXGroup;
 			children = (
 				74F6E423296443F200795629 /* README.md */,
 				74F6E40E296443D400795629 /* MovieLatte */,
 				74F6E40D296443D400795629 /* Products */,
+				450F7F5D63F11E4C4F7A0FAC /* Pods */,
+				3745BA216FDCF2477171C71F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,15 +118,129 @@
 		74F6E40E296443D400795629 /* MovieLatte */ = {
 			isa = PBXGroup;
 			children = (
+				74F6E44D2964A86B00795629 /* AppDelegateServices */,
+				74F6E4512964A8BE00795629 /* DepencyInjections */,
+				74F6E42B29647A3900795629 /* Application */,
+				74F6E42C29647A4F00795629 /* Core */,
+				74F6E4292964740B00795629 /* AppConfig.swift */,
 				74F6E40F296443D400795629 /* AppDelegate.swift */,
 				74F6E411296443D400795629 /* SceneDelegate.swift */,
-				74F6E413296443D400795629 /* ViewController.swift */,
-				74F6E415296443D400795629 /* Main.storyboard */,
 				74F6E418296443D400795629 /* Assets.xcassets */,
-				74F6E41A296443D400795629 /* LaunchScreen.storyboard */,
 				74F6E41D296443D400795629 /* Info.plist */,
 			);
 			path = MovieLatte;
+			sourceTree = "<group>";
+		};
+		74F6E425296445D900795629 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				74F6E415296443D400795629 /* Main.storyboard */,
+				74F6E41A296443D400795629 /* LaunchScreen.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		74F6E4262964461E00795629 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		74F6E4272964462300795629 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				74F6E44B2964823F00795629 /* NetworkService.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		74F6E4282964462E00795629 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				74F6E413296443D400795629 /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		74F6E42B29647A3900795629 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				74F6E4272964462300795629 /* Network */,
+				74F6E4282964462E00795629 /* Controllers */,
+				74F6E4262964461E00795629 /* Model */,
+				74F6E425296445D900795629 /* Views */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		74F6E42C29647A4F00795629 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				74F6E448296480A000795629 /* Network */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		74F6E43129647B1600795629 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				74F6E449296480BD00795629 /* StringExtensions.swift */,
+				74F6E43229647B2B00795629 /* URLComponentExtensions.swift */,
+				74F6E43B29647D1A00795629 /* HTTPResponseExtension.swift */,
+				74F6E43D29647D3700795629 /* URLSessionExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		74F6E43429647B6700795629 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				74F6E42D29647AC500795629 /* RequestObject.swift */,
+				74F6E42F29647AF500795629 /* HTTPMethod.swift */,
+				74F6E43529647B7B00795629 /* HTTPStatus.swift */,
+				74F6E43729647CDC00795629 /* AppError.swift */,
+				74F6E43929647CF800795629 /* DateFormatter.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		74F6E43F29647D4900795629 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				74F6E44229647DEB00795629 /* TargetEndpointProtocol.swift */,
+				74F6E44429647E3E00795629 /* BaseServiceProtocol.swift */,
+				74F6E44629647EFD00795629 /* Requestable.swift */,
+				74F6E44029647D5500795629 /* NetworkLoader.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		74F6E448296480A000795629 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				74F6E43F29647D4900795629 /* Protocols */,
+				74F6E43129647B1600795629 /* Extensions */,
+				74F6E43429647B6700795629 /* Entities */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		74F6E44D2964A86B00795629 /* AppDelegateServices */ = {
+			isa = PBXGroup;
+			children = (
+				74F6E44E2964A87E00795629 /* DependencyRegistrationService.swift */,
+			);
+			path = AppDelegateServices;
+			sourceTree = "<group>";
+		};
+		74F6E4512964A8BE00795629 /* DepencyInjections */ = {
+			isa = PBXGroup;
+			children = (
+				74F6E4522964A8D600795629 /* ServiceRegistration.swift */,
+				74F6E4542964AA3700795629 /* RemoteServiceRegistration.swift */,
+			);
+			path = DepencyInjections;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -76,9 +250,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 74F6E420296443D400795629 /* Build configuration list for PBXNativeTarget "MovieLatte" */;
 			buildPhases = (
+				1372BB3F7790E600F4A0BF20 /* [CP] Check Pods Manifest.lock */,
 				74F6E408296443D400795629 /* Sources */,
 				74F6E409296443D400795629 /* Frameworks */,
 				74F6E40A296443D400795629 /* Resources */,
+				AA49A377C0E503B27886DCD0 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -105,7 +281,7 @@
 				};
 			};
 			buildConfigurationList = 74F6E407296443D400795629 /* Build configuration list for PBXProject "MovieLatte" */;
-			compatibilityVersion = "Xcode 14.0";
+			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -135,14 +311,74 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1372BB3F7790E600F4A0BF20 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MovieLatte-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AA49A377C0E503B27886DCD0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MovieLatte/Pods-MovieLatte-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MovieLatte/Pods-MovieLatte-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MovieLatte/Pods-MovieLatte-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		74F6E408296443D400795629 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				74F6E44129647D5500795629 /* NetworkLoader.swift in Sources */,
+				74F6E44329647DEB00795629 /* TargetEndpointProtocol.swift in Sources */,
 				74F6E414296443D400795629 /* ViewController.swift in Sources */,
+				74F6E44529647E3E00795629 /* BaseServiceProtocol.swift in Sources */,
+				74F6E44C2964823F00795629 /* NetworkService.swift in Sources */,
+				74F6E4552964AA3700795629 /* RemoteServiceRegistration.swift in Sources */,
+				74F6E43329647B2B00795629 /* URLComponentExtensions.swift in Sources */,
+				74F6E44F2964A87E00795629 /* DependencyRegistrationService.swift in Sources */,
+				74F6E43829647CDC00795629 /* AppError.swift in Sources */,
+				74F6E4532964A8D600795629 /* ServiceRegistration.swift in Sources */,
+				74F6E43C29647D1A00795629 /* HTTPResponseExtension.swift in Sources */,
 				74F6E410296443D400795629 /* AppDelegate.swift in Sources */,
+				74F6E43A29647CF800795629 /* DateFormatter.swift in Sources */,
+				74F6E44729647EFD00795629 /* Requestable.swift in Sources */,
+				74F6E43029647AF500795629 /* HTTPMethod.swift in Sources */,
+				74F6E42A2964740B00795629 /* AppConfig.swift in Sources */,
+				74F6E43E29647D3700795629 /* URLSessionExtension.swift in Sources */,
+				74F6E42E29647AC500795629 /* RequestObject.swift in Sources */,
+				74F6E44A296480BD00795629 /* StringExtensions.swift in Sources */,
 				74F6E412296443D400795629 /* SceneDelegate.swift in Sources */,
+				74F6E43629647B7B00795629 /* HTTPStatus.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -218,7 +454,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -272,7 +508,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -284,6 +520,7 @@
 		};
 		74F6E421296443D400795629 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 81FA9E21D89ADE64B32BD021 /* Pods-MovieLatte.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -297,6 +534,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -312,6 +550,7 @@
 		};
 		74F6E422296443D400795629 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E79062FB239CCF2BF9CD1585 /* Pods-MovieLatte.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -325,6 +564,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
