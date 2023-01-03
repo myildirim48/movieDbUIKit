@@ -7,9 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7483A73F2964C1E900643832 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7483A73E2964C1E900643832 /* HomeController.swift */; };
+		748863622964AEF100B1BF91 /* ImageviewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 748863612964AEF100B1BF91 /* ImageviewExtension.swift */; };
+		748863652964B27500B1BF91 /* Endpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 748863642964B27500B1BF91 /* Endpoints.swift */; };
+		748863682964B48400B1BF91 /* MultiSearchResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 748863672964B48400B1BF91 /* MultiSearchResponse.swift */; };
+		7488636B2964B5DA00B1BF91 /* SearchRemoteService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7488636A2964B5DA00B1BF91 /* SearchRemoteService.swift */; };
 		74F6E410296443D400795629 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F6E40F296443D400795629 /* AppDelegate.swift */; };
 		74F6E412296443D400795629 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F6E411296443D400795629 /* SceneDelegate.swift */; };
-		74F6E414296443D400795629 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F6E413296443D400795629 /* ViewController.swift */; };
+		74F6E414296443D400795629 /* SearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F6E413296443D400795629 /* SearchController.swift */; };
 		74F6E417296443D400795629 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74F6E415296443D400795629 /* Main.storyboard */; };
 		74F6E419296443D400795629 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74F6E418296443D400795629 /* Assets.xcassets */; };
 		74F6E41C296443D400795629 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74F6E41A296443D400795629 /* LaunchScreen.storyboard */; };
@@ -35,10 +40,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7483A73E2964C1E900643832 /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
+		748863612964AEF100B1BF91 /* ImageviewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageviewExtension.swift; sourceTree = "<group>"; };
+		748863642964B27500B1BF91 /* Endpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoints.swift; sourceTree = "<group>"; };
+		748863672964B48400B1BF91 /* MultiSearchResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiSearchResponse.swift; sourceTree = "<group>"; };
+		7488636A2964B5DA00B1BF91 /* SearchRemoteService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRemoteService.swift; sourceTree = "<group>"; };
 		74F6E40C296443D400795629 /* MovieLatte.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MovieLatte.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		74F6E40F296443D400795629 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		74F6E411296443D400795629 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		74F6E413296443D400795629 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		74F6E413296443D400795629 /* SearchController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchController.swift; sourceTree = "<group>"; };
 		74F6E416296443D400795629 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		74F6E418296443D400795629 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		74F6E41B296443D400795629 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -96,6 +106,39 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		748863602964AEE100B1BF91 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				74F6E449296480BD00795629 /* StringExtensions.swift */,
+				748863612964AEF100B1BF91 /* ImageviewExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		748863632964B26700B1BF91 /* Endpoints */ = {
+			isa = PBXGroup;
+			children = (
+				748863642964B27500B1BF91 /* Endpoints.swift */,
+			);
+			path = Endpoints;
+			sourceTree = "<group>";
+		};
+		748863662964B47900B1BF91 /* MultiSearch */ = {
+			isa = PBXGroup;
+			children = (
+				748863672964B48400B1BF91 /* MultiSearchResponse.swift */,
+			);
+			path = MultiSearch;
+			sourceTree = "<group>";
+		};
+		748863692964B5BF00B1BF91 /* RemoteServices */ = {
+			isa = PBXGroup;
+			children = (
+				7488636A2964B5DA00B1BF91 /* SearchRemoteService.swift */,
+			);
+			path = RemoteServices;
+			sourceTree = "<group>";
+		};
 		74F6E403296443D400795629 = {
 			isa = PBXGroup;
 			children = (
@@ -143,6 +186,7 @@
 		74F6E4262964461E00795629 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				748863662964B47900B1BF91 /* MultiSearch */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -151,6 +195,8 @@
 			isa = PBXGroup;
 			children = (
 				74F6E44B2964823F00795629 /* NetworkService.swift */,
+				748863692964B5BF00B1BF91 /* RemoteServices */,
+				748863632964B26700B1BF91 /* Endpoints */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -158,7 +204,8 @@
 		74F6E4282964462E00795629 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				74F6E413296443D400795629 /* ViewController.swift */,
+				74F6E413296443D400795629 /* SearchController.swift */,
+				7483A73E2964C1E900643832 /* HomeController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -177,6 +224,7 @@
 		74F6E42C29647A4F00795629 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				748863602964AEE100B1BF91 /* Extensions */,
 				74F6E448296480A000795629 /* Network */,
 			);
 			path = Core;
@@ -185,7 +233,6 @@
 		74F6E43129647B1600795629 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				74F6E449296480BD00795629 /* StringExtensions.swift */,
 				74F6E43229647B2B00795629 /* URLComponentExtensions.swift */,
 				74F6E43B29647D1A00795629 /* HTTPResponseExtension.swift */,
 				74F6E43D29647D3700795629 /* URLSessionExtension.swift */,
@@ -360,22 +407,27 @@
 			files = (
 				74F6E44129647D5500795629 /* NetworkLoader.swift in Sources */,
 				74F6E44329647DEB00795629 /* TargetEndpointProtocol.swift in Sources */,
-				74F6E414296443D400795629 /* ViewController.swift in Sources */,
+				74F6E414296443D400795629 /* SearchController.swift in Sources */,
 				74F6E44529647E3E00795629 /* BaseServiceProtocol.swift in Sources */,
 				74F6E44C2964823F00795629 /* NetworkService.swift in Sources */,
 				74F6E4552964AA3700795629 /* RemoteServiceRegistration.swift in Sources */,
+				7483A73F2964C1E900643832 /* HomeController.swift in Sources */,
 				74F6E43329647B2B00795629 /* URLComponentExtensions.swift in Sources */,
 				74F6E44F2964A87E00795629 /* DependencyRegistrationService.swift in Sources */,
 				74F6E43829647CDC00795629 /* AppError.swift in Sources */,
 				74F6E4532964A8D600795629 /* ServiceRegistration.swift in Sources */,
 				74F6E43C29647D1A00795629 /* HTTPResponseExtension.swift in Sources */,
 				74F6E410296443D400795629 /* AppDelegate.swift in Sources */,
+				748863652964B27500B1BF91 /* Endpoints.swift in Sources */,
+				748863622964AEF100B1BF91 /* ImageviewExtension.swift in Sources */,
 				74F6E43A29647CF800795629 /* DateFormatter.swift in Sources */,
 				74F6E44729647EFD00795629 /* Requestable.swift in Sources */,
 				74F6E43029647AF500795629 /* HTTPMethod.swift in Sources */,
 				74F6E42A2964740B00795629 /* AppConfig.swift in Sources */,
 				74F6E43E29647D3700795629 /* URLSessionExtension.swift in Sources */,
+				7488636B2964B5DA00B1BF91 /* SearchRemoteService.swift in Sources */,
 				74F6E42E29647AC500795629 /* RequestObject.swift in Sources */,
+				748863682964B48400B1BF91 /* MultiSearchResponse.swift in Sources */,
 				74F6E44A296480BD00795629 /* StringExtensions.swift in Sources */,
 				74F6E412296443D400795629 /* SceneDelegate.swift in Sources */,
 				74F6E43629647B7B00795629 /* HTTPStatus.swift in Sources */,
