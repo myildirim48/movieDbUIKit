@@ -24,6 +24,7 @@
 		74F6E418296443D400795629 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		74F6E41B296443D400795629 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		74F6E41D296443D400795629 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		74F6E423296443F200795629 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +41,7 @@
 		74F6E403296443D400795629 = {
 			isa = PBXGroup;
 			children = (
+				74F6E423296443F200795629 /* README.md */,
 				74F6E40E296443D400795629 /* MovieLatte */,
 				74F6E40D296443D400795629 /* Products */,
 			);
