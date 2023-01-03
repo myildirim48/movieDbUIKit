@@ -7,6 +7,14 @@ This is my app where i want to show what i know about iOS development.I use UIKi
 ### Design Architechture
 - MVC
 
-### Third Party
+### Dependency Management
+
+Cocoapods is the dependency manager for this project.
+
+### List of Frameworks
+| Dependency             | Description                                          |
+|-------------------------|-------------------------------------------------------|
+|**Resolver** | Dependency Injection / Service locator framework |
+|**KingFisher** |  For downloading images |
 
 
