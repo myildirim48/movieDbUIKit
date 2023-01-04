@@ -90,7 +90,7 @@ extension SearchController: UITableViewDelegate,UITableViewDataSource,UISearchBa
         return cell
     }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return view.frame.height / 6
+        return (view.frame.height / 5.5)
     }
     
 }
