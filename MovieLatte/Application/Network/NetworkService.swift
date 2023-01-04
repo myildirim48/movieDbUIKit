@@ -7,9 +7,10 @@
 
 import Foundation
 import Resolver
+
 final class NetworkService: BaseServiceProtocol {
     
-    @Injected var urlSession: NetworkLoader
+    @Injected private var urlSession: NetworkLoader
     
     func request<T: Decodable>(with requestObject: RequestObject,
                                decoder: JSONDecoder = Resolver.resolve(),

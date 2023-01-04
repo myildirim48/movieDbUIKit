@@ -9,13 +9,10 @@
 import Foundation
 
 protocol SearchServiceProtocol {
-    
     func getSearchedItems(queryText:String,
                           page: Int,
                           handler: @escaping (Result<MultiSearchResponse, Error>) -> Void)
-    
 }
-
 final class SearchRemoteService: SearchServiceProtocol, Requestable {
     
     typealias TargetEndPoint = Endpoints

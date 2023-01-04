@@ -11,6 +11,7 @@ final class DependencyRegistrationService: NSObject, UIApplicationDelegate {
     typealias Registration = () -> Void
     
     private lazy var registrations : [Registration] = [registerService,
+                                                       registerRepositories,
                                                        registerRemoteService]
     
     
