@@ -15,7 +15,7 @@ class SearchController: UIViewController {
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var searhTableView: UITableView!
     
-    fileprivate var searchResult:[MultiSearchUIModel] = []
+    fileprivate var searchResult : [MultiSearchUIModel] = []
     
     private var timer:Timer?
     private var page = 1
@@ -59,6 +59,7 @@ extension SearchController: UITableViewDelegate,UITableViewDataSource,UISearchBa
                 DispatchQueue.main.async {
                     self.searchResult = []
                     self.searchResult = model
+                    self.searhTableView.reloadData()
                 }
             case .failure(let err):
                 DispatchQueue.main.async {
@@ -80,12 +81,17 @@ extension SearchController: UITableViewDelegate,UITableViewDataSource,UISearchBa
         cell.titleLabel.text = result.searchedObjectTitle
         cell.dataTypeLabel.text = result.searchedObjectTypeUI
         cell.searchImageView.setImage(imageUrl: result.searchedObjectPhotoUI)
-        cell.dateTimeLabel.text = result.releaseDate
+        
+        
+        let date = result.releaseDate?.prefix(4) ?? ""
+        cell.dateTimeLabel.text = String(date)
         
         
         return cell
     }
-    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return view.frame.height / 6
+    }
     
 }
 

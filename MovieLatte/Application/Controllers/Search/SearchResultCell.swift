@@ -13,9 +13,13 @@ class SearchResultCell: UITableViewCell {
     @IBOutlet weak var dateTimeLabel: UILabel!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var searchImageView: UIImageView!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        
+        searchImageView.layer.cornerRadius = 20
+        searchImageView.clipsToBounds = true
     }
 
 

@@ -10,11 +10,13 @@ import UIKit
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
+    lazy var appDelegateServices: [UIApplicationDelegate] = [DependencyRegistrationService()]
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
-        return true
+        return appDelegateServices.allSatisfy { service -> Bool in
+            service.application?(application, didFinishLaunchingWithOptions: launchOptions) ?? true
+        }
     }
 
     // MARK: UISceneSession Lifecycle

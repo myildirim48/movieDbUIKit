@@ -5,8 +5,8 @@
 //  Created by YILDIRIM on 4.01.2023.
 //
 
-import Foundation
 import Resolver
+import Foundation
 
 protocol SearchRepositoryProtocol {
     
