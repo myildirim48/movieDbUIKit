@@ -116,6 +116,14 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		7462B2A72966B7010015469E /* UIModels */ = {
+			isa = PBXGroup;
+			children = (
+				7483A74A2965787A00643832 /* MultiSearchUIModel.swift */,
+			);
+			path = UIModels;
+			sourceTree = "<group>";
+		};
 		7483A7442964C54400643832 /* Search */ = {
 			isa = PBXGroup;
 			children = (
@@ -150,12 +158,12 @@
 			path = Endpoints;
 			sourceTree = "<group>";
 		};
-		748863662964B47900B1BF91 /* MultiSearch */ = {
+		748863662964B47900B1BF91 /* Models */ = {
 			isa = PBXGroup;
 			children = (
 				748863672964B48400B1BF91 /* MultiSearchResponse.swift */,
 			);
-			path = MultiSearch;
+			path = Models;
 			sourceTree = "<group>";
 		};
 		748863692964B5BF00B1BF91 /* RemoteServices */ = {
@@ -214,8 +222,8 @@
 		74F6E4262964461E00795629 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				748863662964B47900B1BF91 /* MultiSearch */,
-				7483A74A2965787A00643832 /* MultiSearchUIModel.swift */,
+				7462B2A72966B7010015469E /* UIModels */,
+				748863662964B47900B1BF91 /* Models */,
 			);
 			path = Model;
 			sourceTree = "<group>";

@@ -46,7 +46,7 @@ struct MultiSearchUIModel:Identifiable,Equatable{
         case .person : return "Person"
         case .tv : return "Tv"
         case .movie : return "Movie"
-        case .none: return "FuckMovieType" //Update
+        case .none: return "No Type" //Update
         }
     }
     

@@ -81,16 +81,15 @@ extension SearchController: UITableViewDelegate,UITableViewDataSource,UISearchBa
         cell.titleLabel.text = result.searchedObjectTitle
         cell.dataTypeLabel.text = result.searchedObjectTypeUI
         cell.searchImageView.setImage(imageUrl: result.searchedObjectPhotoUI)
-        
-        
-        let date = result.releaseDate?.prefix(4) ?? ""
-        cell.dateTimeLabel.text = String(date)
-        
+        cell.overviewLabel.text = result.overview ?? ""
+        cell.yearLabel.text = result.yearTextUi
+        cell.starLabel.text = result.ratingTextUi
+        cell.ratingRatioLabel.text = result.scoreTextUi
         
         return cell
     }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return (view.frame.height / 5.5)
+        return (view.frame.height / 6)
     }
     
 }
