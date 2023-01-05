@@ -33,9 +33,9 @@ struct MultiSearchUIModel:Identifiable,Equatable{
     
     var searchedObjectPhotoUI: String{
         if posterPath != nil{
-            return "https://image.tmdb.org/t/p/w500\(posterPath ?? "")"
+            return "\(AppConfig.imageUrl)\(posterPath ?? "")"
         }else if profilePath != nil{
-            return "https://image.tmdb.org/t/p/w500\(profilePath ?? "")"
+            return "\(AppConfig.imageUrl)\(profilePath ?? "")"
         }
         else { return "" } //https://image.tmdb.org/t/p/w500/dJZdaQXZ0qSeT4BrTibVIyl2JcZ.jpg Atam
     }

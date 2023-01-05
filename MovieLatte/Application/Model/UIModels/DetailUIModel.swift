@@ -71,6 +71,17 @@ struct DetailUIModel: Identifiable, Equatable {
             return name ?? "nameError"
         }else { return "ErrorObjectTitle"}
     }
+    //Release Datetext
+    
+    var releaseDateText: String?{
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "yyyy"
+        var releaseDate = ""
+        if let date = DateFormatterStruct.dateFormatter.date(from: self.releaseDate ?? "") {
+            releaseDate = dateFormatter.string(from: date)
+        }
+        return releaseDate
+    }
     
     //OverView Bio
     var detailOverBio: String{
@@ -81,15 +92,15 @@ struct DetailUIModel: Identifiable, Equatable {
         }else { return "ErrorDetailOVerBio"}
     }
     
-    var detailPhotoUI: String{
+    var backdropPosterUrlString: String{
         if backdropPath != nil{
-            return "https://image.tmdb.org/t/p/w500\(backdropPath ?? "back")"
+            return  AppConfig.imageUrl + backdropPath!
         }else if profilePath != nil{
-            return "https://image.tmdb.org/t/p/w500\(profilePath ?? "profi")"
+            return  AppConfig.imageUrl + profilePath!
         }else if posterPath != nil {
-            return "https://image.tmdb.org/t/p/w500\(posterPath ?? "poster")"
+            return  AppConfig.imageUrl + posterPath!
         }
-        else { return "https://image.tmdb.org/t/p/w500/dJZdaQXZ0qSeT4BrTibVIyl2JcZ.jpg" } // Atam
+        else { return "\(AppConfig.imageUrl)dJZdaQXZ0qSeT4BrTibVIyl2JcZ.jpg" } // Atam
     }
     
     //Rating,Score
@@ -106,6 +117,16 @@ struct DetailUIModel: Identifiable, Equatable {
             return "n / a"
         }
         return "\(ratingTextUi.count)/10"
+    }
+    //Runtime to string
+    var runTimeString: String? {
+        let time = runtime ?? 0
+        if time == 0 {
+            return nil
+        }
+        let hour = time / 60
+        let min = time % 60
+        return "\(hour)h \(min)min"
     }
     
 

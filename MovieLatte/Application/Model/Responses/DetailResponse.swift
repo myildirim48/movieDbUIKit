@@ -12,7 +12,6 @@ struct DetailResponse: Codable,Equatable {
     static func == (lhs: DetailResponse, rhs: DetailResponse) -> Bool {
         lhs.id == rhs.id
     }
-    //Please tell me master the diffrence between MultiSearch Equatable and here in MultiSearch there is no this func but it conforms
 
     let id: Int
     let title: String?

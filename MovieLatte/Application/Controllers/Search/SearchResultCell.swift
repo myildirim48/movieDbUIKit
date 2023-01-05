@@ -25,6 +25,8 @@ class SearchResultCell: UITableViewCell {
         searchImageView.clipsToBounds = true
         
         starLabel.textColor = UIColor(red: 0.99, green: 0.80, blue: 0.00, alpha: 1.00)
+        
+        
     }
 
 

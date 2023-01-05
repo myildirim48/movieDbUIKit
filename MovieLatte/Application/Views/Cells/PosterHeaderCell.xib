@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner">
+            <connections>
+                <outlet property="containerview" destination="Zo9-c4-N1f" id="bwX-Fm-vYV"/>
+                <outlet property="gardientContainer" destination="SPb-nt-nnV" id="ffo-X8-fYF"/>
+                <outlet property="posterImageView" destination="LKU-EJ-wM7" id="9hy-U4-xBJ"/>
+                <outlet property="textDatalabel" destination="o4h-I2-Xes" id="IYM-je-OHJ"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="qe2-PY-HOv" customClass="PosterHeaderCell" customModule="MovieLatte" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="525" height="358"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zo9-c4-N1f" userLabel="Container View">
+                    <rect key="frame" x="0.0" y="0.0" width="525" height="358"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="LKU-EJ-wM7" userLabel="PosterImageView">
+                            <rect key="frame" x="0.0" y="0.0" width="525" height="358"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SPb-nt-nnV" userLabel="GradientContainer">
+                            <rect key="frame" x="0.0" y="318" width="525" height="40"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o4h-I2-Xes">
+                                    <rect key="frame" x="10" y="0.0" width="39" height="40"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="40" id="IOX-6c-Kik"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="o4h-I2-Xes" firstAttribute="leading" secondItem="SPb-nt-nnV" secondAttribute="leading" constant="10" id="Gca-AH-pXZ"/>
+                                <constraint firstItem="o4h-I2-Xes" firstAttribute="top" secondItem="SPb-nt-nnV" secondAttribute="top" id="QdZ-mE-71U"/>
+                                <constraint firstAttribute="bottom" secondItem="o4h-I2-Xes" secondAttribute="bottom" id="l4O-Fi-H7V"/>
+                                <constraint firstAttribute="height" constant="40" id="rWl-NL-CII"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="labelColor"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="SPb-nt-nnV" secondAttribute="bottom" id="7rg-TS-Nvc"/>
+                        <constraint firstItem="SPb-nt-nnV" firstAttribute="leading" secondItem="Zo9-c4-N1f" secondAttribute="leading" id="Jvi-yb-BHI"/>
+                        <constraint firstAttribute="trailing" secondItem="SPb-nt-nnV" secondAttribute="trailing" id="ixH-RR-DOV"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="VZ5-nH-OOC" propertyAccessControl="none"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="Zo9-c4-N1f" firstAttribute="leading" secondItem="VZ5-nH-OOC" secondAttribute="leading" id="BDD-oB-o45"/>
+                <constraint firstAttribute="bottom" secondItem="Zo9-c4-N1f" secondAttribute="bottom" id="Hit-3p-uHd"/>
+                <constraint firstItem="Zo9-c4-N1f" firstAttribute="top" secondItem="qe2-PY-HOv" secondAttribute="top" id="a2v-nZ-fCd"/>
+                <constraint firstItem="Zo9-c4-N1f" firstAttribute="trailing" secondItem="VZ5-nH-OOC" secondAttribute="trailing" id="bYa-yi-of1"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-593.12977099236639" y="112.67605633802818"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="placeholder" width="600" height="848"/>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
