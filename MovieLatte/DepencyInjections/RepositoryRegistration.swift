@@ -11,5 +11,6 @@ import Resolver
 extension DependencyRegistrationService{
     func registerRepositories(){
         Resolver.register { SearchRepository() as SearchRepositoryProtocol }
+        Resolver.register { DetailRepository() as DetailRepositoryProtocol }
     }
 }
