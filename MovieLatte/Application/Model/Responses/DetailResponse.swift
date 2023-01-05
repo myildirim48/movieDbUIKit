@@ -26,6 +26,9 @@ struct DetailResponse: Codable,Equatable {
     let releaseDate: String?
     let profilePath: String?
     let tagline: String?
+    let homepage: String?
+    let genres : [Genre]?
+    let originalTitle: String?
     
     //Person
     let biography: String?
@@ -36,7 +39,8 @@ struct DetailResponse: Codable,Equatable {
     //All
     let credits: MovieCredit?
     let videos: MovieVideoResponse?
- 
+    
+
     
     //MARK: - Credits,Videos
     var cast: [MovieCast]? {
@@ -47,44 +51,38 @@ struct DetailResponse: Codable,Equatable {
         credits?.crew
     }
     
-    var directors: [MovieCrew]? {
-        crew?.filter { $0.job.lowercased() == "director" }
-    }
-    
-    var producers: [MovieCrew]? {
-        crew?.filter { $0.job.lowercased() == "producer" }
-    }
-    
-    var screenWriters: [MovieCrew]? {
-        crew?.filter { $0.job.lowercased() == "story" }
-    }
-    
     var youtubeTrailers: [MovieVideo]? {
         videos?.results.filter { $0.youtubeURL != nil }
     }
 }
 
 //MARK: - SpecialDataTypes
-struct MovieGenre: Codable {
-    
-    let name: String
-}
 
 struct MovieCredit: Codable {
     let cast: [MovieCast]
     let crew: [MovieCrew]
 }
 
-struct MovieCast: Codable, Identifiable {
-    let id: Int
-    let character: String
-    let name: String
+//Genre
+struct Genre: Codable,Hashable {
+    let id: Int?
+    let name: String?
 }
 
-struct MovieCrew: Codable, Identifiable {
+struct MovieCast: Codable, Identifiable {
     let id: Int
-    let job: String
-    let name: String
+    let character,name,profilePath: String?
+    var profileURL: URL {
+        return URL(string: AppConfig.getPosterURL(query: profilePath ?? ""))!
+    }
+}
+
+struct MovieCrew: Codable, Hashable {
+    let id: Int
+    let job: String?
+    let name: String?
+    let department: String?
+    
 }
 
 struct MovieVideoResponse: Codable {

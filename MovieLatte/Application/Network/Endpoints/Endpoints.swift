@@ -34,5 +34,4 @@ enum Endpoints : TargetEndpointProtocol {
         return requestObject
     }
     
-    
 }

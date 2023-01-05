@@ -9,7 +9,7 @@ import UIKit
 import Resolver
 
 class SearchController: UIViewController {
-
+    
     @Injected var repository: SearchRepositoryProtocol
     
     @IBOutlet weak var searchBar: UISearchBar!
@@ -26,7 +26,7 @@ class SearchController: UIViewController {
         // Do any additional setup after loading the view.
         
         searhTableView.register(UINib.init(nibName: "SearchResultCell", bundle: nil), forCellReuseIdentifier: "searchResultCell")
-        
+        searhTableView.keyboardDismissMode = .onDrag
         searhTableView.dataSource = self
         searhTableView.delegate = self
     }
@@ -90,6 +90,22 @@ extension SearchController: UITableViewDelegate,UITableViewDataSource,UISearchBa
     }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return (view.frame.height / 6)
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let data = searchResult[indexPath.item]
+        
+        
+        let mainStoryBoard = UIStoryboard(name: "Main", bundle: Bundle.main)
+              guard let detailVC = mainStoryBoard.instantiateViewController(withIdentifier: "detailViewTo") as? DetailController else {
+                  return
+              }
+            
+        detailVC.searchedId = data.id
+        detailVC.searchedMediaType = data.mediaType?.rawValue.lowercased() ?? ""
+              
+        navigationController?.pushViewController(detailVC, animated: true)
+        
     }
     
 }

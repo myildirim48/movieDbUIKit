@@ -40,11 +40,15 @@ final class AppConfig{
     static var imageUrl : String {
         switch configuration {
         case .development:
-            return "image.tmdb.org/t/p/w500/"
+            return "https://image.tmdb.org/t/p/w500"
         case .staging:
-            return "image.tmdb.org/t/p/w500/"
+            return "https://image.tmdb.org/t/p/w500"
         case .production:
-            return "image.tmdb.org/t/p/w500/"
+            return "https://image.tmdb.org/t/p/w500"
         }
+    }
+    
+    static func getPosterURL(query: String) -> String{
+        return imageUrl+query
     }
 }

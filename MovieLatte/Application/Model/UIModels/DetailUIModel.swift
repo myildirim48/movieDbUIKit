@@ -9,7 +9,7 @@ import Foundation
 
 struct DetailUIModel: Identifiable, Equatable {
     
-    let id: Int
+    let id: Int?
     let title: String?
     let name: String?
     
@@ -22,6 +22,9 @@ struct DetailUIModel: Identifiable, Equatable {
     let releaseDate: String?
     let profilePath: String?
     let tagline: String?
+    let homepage: String?
+    let originalTitle: String?
+    let genres: [Genre]?
     
     //Person
     let biography: String?
@@ -37,6 +40,7 @@ struct DetailUIModel: Identifiable, Equatable {
     static func == (lhs:DetailUIModel, rhs:DetailUIModel) -> Bool {
         return lhs.id == rhs.id
     }
+
     
     //MARK: - Credits,Videos
     var cast: [MovieCast]? {
@@ -45,18 +49,6 @@ struct DetailUIModel: Identifiable, Equatable {
     
     var crew: [MovieCrew]? {
         credits?.crew
-    }
-    
-    var directors: [MovieCrew]? {
-        crew?.filter { $0.job.lowercased() == "director" }
-    }
-    
-    var producers: [MovieCrew]? {
-        crew?.filter { $0.job.lowercased() == "producer" }
-    }
-    
-    var screenWriters: [MovieCrew]? {
-        crew?.filter { $0.job.lowercased() == "story" }
     }
     
     var youtubeTrailers: [MovieVideo]? {
@@ -133,6 +125,7 @@ struct DetailUIModel: Identifiable, Equatable {
   
 }
 
+
 //MARK: - Extensions
 extension DetailUIModel {
    
@@ -140,7 +133,7 @@ extension DetailUIModel {
     
     static func converted(from response: DetailResponse) -> DetailUIModel {
             
-            return DetailUIModel(id: response.id, title: response.title, name: response.name, backdropPath: response.backdropPath, posterPath: response.posterPath, overview: response.overview, voteAverage: response.voteAverage, voteCount: response.voteCount, runtime: response.runtime, releaseDate: response.releaseDate, profilePath: response.profilePath, tagline: response.tagline, biography: response.biography, placeOfBirth: response.placeOfBirth, birthDay: response.birthDay, deathDay: response.deathDay, credits: response.credits, videos: response.videos)
+        return DetailUIModel(id: response.id, title: response.title, name: response.name, backdropPath: response.backdropPath, posterPath: response.posterPath, overview: response.overview, voteAverage: response.voteAverage, voteCount: response.voteCount, runtime: response.runtime, releaseDate: response.releaseDate, profilePath: response.profilePath, tagline: response.tagline, homepage: response.homepage, originalTitle: response.originalTitle, genres: response.genres, biography: response.biography, placeOfBirth: response.placeOfBirth, birthDay: response.birthDay, deathDay: response.deathDay, credits: response.credits, videos: response.videos)
         
     }
 }

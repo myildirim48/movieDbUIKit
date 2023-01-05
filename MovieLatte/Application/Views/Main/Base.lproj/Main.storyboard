@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Search-->
+        <!--Search Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="SearchController" customModule="MovieLatte" customModuleProvider="target" sceneMemberID="viewController">
@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="J1N-VX-dTI">
-                                <rect key="frame" x="0.0" y="47" width="375" height="682"/>
+                                <rect key="frame" x="0.0" y="91" width="375" height="638"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <searchBar key="tableHeaderView" contentMode="redraw" id="7Da-7f-cae">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -39,15 +39,42 @@
                             <constraint firstItem="J1N-VX-dTI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="tAF-Ww-LJA"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Search" image="magnifyingglass" catalog="system" id="UFb-lf-dAQ"/>
+                    <navigationItem key="navigationItem" id="F7T-Tk-ps9"/>
                     <connections>
                         <outlet property="searchBar" destination="7Da-7f-cae" id="Mty-uV-Pid"/>
                         <outlet property="searhTableView" destination="J1N-VX-dTI" id="JeZ-OI-79a"/>
+                        <segue destination="KeE-Qm-afs" kind="presentation" identifier="detailViewTo" modalPresentationStyle="fullScreen" id="2vL-lS-PAV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1898.4000000000001" y="-2.2167487684729066"/>
+            <point key="canvasLocation" x="2840.8000000000002" y="-2.2167487684729066"/>
+        </scene>
+        <!--Detail Controller-->
+        <scene sceneID="r10-yZ-QLl">
+            <objects>
+                <viewController storyboardIdentifier="detailViewTo" useStoryboardIdentifierAsRestorationIdentifier="YES" id="KeE-Qm-afs" customClass="DetailController" customModule="MovieLatte" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1at-D6-Zii">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="O5l-rw-ROd">
+                                <rect key="frame" x="0.0" y="47" width="375" height="731"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="mWn-h3-aM5"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="k4D-TV-eg3"/>
+                    <connections>
+                        <outlet property="detailTableView" destination="O5l-rw-ROd" id="Aba-pC-UhX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ftB-mM-qbH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3924" y="-2.2167487684729066"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="7XI-g7-MLC">
@@ -61,7 +88,7 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="AIq-oD-OYu"/>
+                        <segue destination="367-DK-j5P" kind="relationship" relationship="viewControllers" id="AIq-oD-OYu"/>
                         <segue destination="PTa-pq-4oh" kind="relationship" relationship="viewControllers" id="q7y-YF-F1L"/>
                     </connections>
                 </tabBarController>
@@ -84,6 +111,25 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mLi-6D-N79" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="956" y="760"/>
+        </scene>
+        <!--Search-->
+        <scene sceneID="Gla-V3-kG7">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="367-DK-j5P" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Search" image="magnifyingglass" catalog="system" id="UFb-lf-dAQ"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="aPd-jk-qSY">
+                        <rect key="frame" x="0.0" y="47" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="ALF-Jz-qKo"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aXc-s2-3g0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1898.4000000000001" y="-2.2167487684729066"/>
         </scene>
     </scenes>
     <resources>

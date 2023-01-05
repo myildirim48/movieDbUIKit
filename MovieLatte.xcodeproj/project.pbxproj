@@ -13,7 +13,14 @@
 		7462B2B32966D0090015469E /* DetailRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7462B2B22966D0090015469E /* DetailRepository.swift */; };
 		7462B2B52966D0630015469E /* DetailRemoteService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7462B2B42966D0630015469E /* DetailRemoteService.swift */; };
 		7462B2B829673D600015469E /* PosterHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7462B2B629673D600015469E /* PosterHeaderCell.swift */; };
-		7462B2BD29673F790015469E /* PosterHeaderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7462B2BC29673F790015469E /* PosterHeaderCell.xib */; };
+		7462B2C429674BE10015469E /* DetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7462B2C229674BE10015469E /* DetailCell.swift */; };
+		7462B2C529674BE10015469E /* DetailCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7462B2C329674BE10015469E /* DetailCell.xib */; };
+		7462B2C729674E500015469E /* UILabelExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7462B2C629674E500015469E /* UILabelExtension.swift */; };
+		7462B2C9296751790015469E /* UITapGestureRecognizer+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7462B2C8296751790015469E /* UITapGestureRecognizer+Extensions.swift */; };
+		7462B2CB2967521C0015469E /* CustomeBrowser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7462B2CA2967521C0015469E /* CustomeBrowser.swift */; };
+		7462B2CD296752D10015469E /* UIWindowExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7462B2CC296752D10015469E /* UIWindowExtension.swift */; };
+		7462B2CF29675ED90015469E /* UITableViewCell+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7462B2CE29675ED90015469E /* UITableViewCell+Extensions.swift */; };
+		74703FCF29677A20001A44B6 /* PosterHeaderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 74703FCE29677A20001A44B6 /* PosterHeaderCell.xib */; };
 		7483A73F2964C1E900643832 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7483A73E2964C1E900643832 /* HomeController.swift */; };
 		7483A7412964C29700643832 /* SearchResultCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7483A7402964C29700643832 /* SearchResultCell.xib */; };
 		7483A7432964C51B00643832 /* SearchResultCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7483A7422964C51B00643832 /* SearchResultCell.swift */; };
@@ -58,7 +65,14 @@
 		7462B2B22966D0090015469E /* DetailRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailRepository.swift; sourceTree = "<group>"; };
 		7462B2B42966D0630015469E /* DetailRemoteService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailRemoteService.swift; sourceTree = "<group>"; };
 		7462B2B629673D600015469E /* PosterHeaderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PosterHeaderCell.swift; sourceTree = "<group>"; };
-		7462B2BC29673F790015469E /* PosterHeaderCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PosterHeaderCell.xib; sourceTree = "<group>"; };
+		7462B2C229674BE10015469E /* DetailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailCell.swift; sourceTree = "<group>"; };
+		7462B2C329674BE10015469E /* DetailCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailCell.xib; sourceTree = "<group>"; };
+		7462B2C629674E500015469E /* UILabelExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabelExtension.swift; sourceTree = "<group>"; };
+		7462B2C8296751790015469E /* UITapGestureRecognizer+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITapGestureRecognizer+Extensions.swift"; sourceTree = "<group>"; };
+		7462B2CA2967521C0015469E /* CustomeBrowser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomeBrowser.swift; sourceTree = "<group>"; };
+		7462B2CC296752D10015469E /* UIWindowExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIWindowExtension.swift; sourceTree = "<group>"; };
+		7462B2CE29675ED90015469E /* UITableViewCell+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+Extensions.swift"; sourceTree = "<group>"; };
+		74703FCE29677A20001A44B6 /* PosterHeaderCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PosterHeaderCell.xib; sourceTree = "<group>"; };
 		7483A73E2964C1E900643832 /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
 		7483A7402964C29700643832 /* SearchResultCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchResultCell.xib; sourceTree = "<group>"; };
 		7483A7422964C51B00643832 /* SearchResultCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultCell.swift; sourceTree = "<group>"; };
@@ -143,7 +157,8 @@
 			isa = PBXGroup;
 			children = (
 				7483A7402964C29700643832 /* SearchResultCell.xib */,
-				7462B2BC29673F790015469E /* PosterHeaderCell.xib */,
+				7462B2C329674BE10015469E /* DetailCell.xib */,
+				74703FCE29677A20001A44B6 /* PosterHeaderCell.xib */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -160,6 +175,7 @@
 			isa = PBXGroup;
 			children = (
 				7462B2B629673D600015469E /* PosterHeaderCell.swift */,
+				7462B2C229674BE10015469E /* DetailCell.swift */,
 				7462B2AA2966BE7F0015469E /* DetailController.swift */,
 			);
 			path = Detail;
@@ -188,6 +204,10 @@
 			children = (
 				74F6E449296480BD00795629 /* StringExtensions.swift */,
 				748863612964AEF100B1BF91 /* ImageviewExtension.swift */,
+				7462B2C629674E500015469E /* UILabelExtension.swift */,
+				7462B2C8296751790015469E /* UITapGestureRecognizer+Extensions.swift */,
+				7462B2CC296752D10015469E /* UIWindowExtension.swift */,
+				7462B2CE29675ED90015469E /* UITableViewCell+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -331,6 +351,7 @@
 				74F6E43529647B7B00795629 /* HTTPStatus.swift */,
 				74F6E43729647CDC00795629 /* AppError.swift */,
 				74F6E43929647CF800795629 /* DateFormatter.swift */,
+				7462B2CA2967521C0015469E /* CustomeBrowser.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -434,8 +455,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7462B2BD29673F790015469E /* PosterHeaderCell.xib in Resources */,
 				74F6E41C296443D400795629 /* LaunchScreen.storyboard in Resources */,
+				74703FCF29677A20001A44B6 /* PosterHeaderCell.xib in Resources */,
+				7462B2C529674BE10015469E /* DetailCell.xib in Resources */,
 				74F6E419296443D400795629 /* Assets.xcassets in Resources */,
 				7483A7412964C29700643832 /* SearchResultCell.xib in Resources */,
 				74F6E417296443D400795629 /* Main.storyboard in Resources */,
@@ -513,16 +535,22 @@
 				7462B2B12966CF320015469E /* DetailUIModel.swift in Sources */,
 				748863652964B27500B1BF91 /* Endpoints.swift in Sources */,
 				748863622964AEF100B1BF91 /* ImageviewExtension.swift in Sources */,
+				7462B2CD296752D10015469E /* UIWindowExtension.swift in Sources */,
+				7462B2C729674E500015469E /* UILabelExtension.swift in Sources */,
+				7462B2C429674BE10015469E /* DetailCell.swift in Sources */,
 				74F6E43A29647CF800795629 /* DateFormatter.swift in Sources */,
 				7462B2B829673D600015469E /* PosterHeaderCell.swift in Sources */,
 				74F6E44729647EFD00795629 /* Requestable.swift in Sources */,
 				74F6E43029647AF500795629 /* HTTPMethod.swift in Sources */,
+				7462B2C9296751790015469E /* UITapGestureRecognizer+Extensions.swift in Sources */,
 				74F6E42A2964740B00795629 /* AppConfig.swift in Sources */,
 				74F6E43E29647D3700795629 /* URLSessionExtension.swift in Sources */,
+				7462B2CF29675ED90015469E /* UITableViewCell+Extensions.swift in Sources */,
 				7488636B2964B5DA00B1BF91 /* SearchRemoteService.swift in Sources */,
 				74F6E42E29647AC500795629 /* RequestObject.swift in Sources */,
 				748863682964B48400B1BF91 /* MultiSearchResponse.swift in Sources */,
 				74F6E44A296480BD00795629 /* StringExtensions.swift in Sources */,
+				7462B2CB2967521C0015469E /* CustomeBrowser.swift in Sources */,
 				74F6E412296443D400795629 /* SceneDelegate.swift in Sources */,
 				74F6E43629647B7B00795629 /* HTTPStatus.swift in Sources */,
 				7462B2B32966D0090015469E /* DetailRepository.swift in Sources */,
