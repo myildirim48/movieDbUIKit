@@ -29,6 +29,7 @@ struct DetailResponse: Codable,Equatable {
     let homepage: String?
     let genres : [Genre]?
     let originalTitle: String?
+    let firstAirDate: String?
     
     //Person
     let biography: String?

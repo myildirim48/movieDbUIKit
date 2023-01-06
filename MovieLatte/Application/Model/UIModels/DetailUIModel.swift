@@ -25,7 +25,8 @@ struct DetailUIModel: Identifiable, Equatable {
     let homepage: String?
     let originalTitle: String?
     let genres: [Genre]?
-    
+    let firstAirDate: String?
+
     //Person
     let biography: String?
     let placeOfBirth: String?
@@ -64,12 +65,20 @@ struct DetailUIModel: Identifiable, Equatable {
         }else { return "ErrorObjectTitle"}
     }
     //Release Datetext
+    var dateData : String {
+        if releaseDate != nil {
+            return releaseDate ?? "3131"
+        }else if firstAirDate != nil {
+            return firstAirDate ?? "2222"
+        }else { return ""}
+    }
     
     var releaseDateText: String?{
+        
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "yyyy"
         var releaseDate = ""
-        if let date = DateFormatterStruct.dateFormatter.date(from: self.releaseDate ?? "") {
+        if let date = DateFormatterStruct.dateFormatter.date(from: dateData) {
             releaseDate = dateFormatter.string(from: date)
         }
         return releaseDate
@@ -133,7 +142,7 @@ extension DetailUIModel {
     
     static func converted(from response: DetailResponse) -> DetailUIModel {
             
-        return DetailUIModel(id: response.id, title: response.title, name: response.name, backdropPath: response.backdropPath, posterPath: response.posterPath, overview: response.overview, voteAverage: response.voteAverage, voteCount: response.voteCount, runtime: response.runtime, releaseDate: response.releaseDate, profilePath: response.profilePath, tagline: response.tagline, homepage: response.homepage, originalTitle: response.originalTitle, genres: response.genres, biography: response.biography, placeOfBirth: response.placeOfBirth, birthDay: response.birthDay, deathDay: response.deathDay, credits: response.credits, videos: response.videos)
+        return DetailUIModel(id: response.id, title: response.title, name: response.name, backdropPath: response.backdropPath, posterPath: response.posterPath, overview: response.overview, voteAverage: response.voteAverage, voteCount: response.voteCount, runtime: response.runtime, releaseDate: response.releaseDate, profilePath: response.profilePath, tagline: response.tagline, homepage: response.homepage, originalTitle: response.originalTitle, genres: response.genres, firstAirDate: response.firstAirDate, biography: response.biography, placeOfBirth: response.placeOfBirth, birthDay: response.birthDay, deathDay: response.deathDay, credits: response.credits, videos: response.videos)
         
     }
 }

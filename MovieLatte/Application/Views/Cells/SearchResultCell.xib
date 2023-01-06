@@ -24,7 +24,7 @@
                         </constraints>
                     </imageView>
                     <stackView autoresizesSubviews="NO" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Z4U-c9-cOg">
-                        <rect key="frame" x="133" y="10" width="220" height="75.666666666666671"/>
+                        <rect key="frame" x="133" y="10" width="200" height="75.666666666666671"/>
                         <subviews>
                             <label autoresizesSubviews="NO" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Titlelabel" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jle-Y9-Bgi">
                                 <rect key="frame" x="0.0" y="0.0" width="220" height="20.333333333333332"/>
@@ -76,10 +76,13 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstItem="6ad-m3-rWg" firstAttribute="leading" secondItem="Tkr-cw-6hv" secondAttribute="trailing" constant="5" id="vdw-1X-ESA"/>
+                                </constraints>
                             </stackView>
                         </subviews>
                         <constraints>
-                            <constraint firstAttribute="width" constant="220" id="sr0-0q-hhq"/>
+                            <constraint firstAttribute="width" constant="200" id="sr0-0q-hhq"/>
                         </constraints>
                     </stackView>
                 </subviews>

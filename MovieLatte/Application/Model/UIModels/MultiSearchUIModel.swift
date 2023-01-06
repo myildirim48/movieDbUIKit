@@ -14,7 +14,7 @@ struct MultiSearchUIModel:Identifiable,Equatable{
     let profilePath :String?
     let name : String?
     let originalTitle, overview: String?
-    let posterPath, releaseDate, title: String?
+    let posterPath, releaseDate, firstAirDate, title: String?
     let voteAverage: Double?
     let voteCount: Int?
     
@@ -46,7 +46,7 @@ struct MultiSearchUIModel:Identifiable,Equatable{
         case .person : return "Person"
         case .tv : return "Tv"
         case .movie : return "Movie"
-        case .none: return "No Type" //Update
+        case .none : return "No Type" //Update
         }
     }
     
@@ -65,8 +65,16 @@ struct MultiSearchUIModel:Identifiable,Equatable{
         return formatter
     }()
     
+    var dateComing: String{
+        if releaseDate != nil {
+            return releaseDate ?? "3131"
+        }else if firstAirDate != nil {
+            return firstAirDate ?? "2222"
+        }else { return ""}
+    }
+    
     var yearTextUi : String {
-        guard let releaseDate = self.releaseDate, let date = DateFormatterStruct.dateFormatter.date(from: releaseDate) else {
+        guard let date = DateFormatterStruct.dateFormatter.date(from: dateComing) else{
             return "n / a"
         }
         return MultiSearchUIModel.yearFormatter.string(from: date)
@@ -87,7 +95,7 @@ extension MultiSearchUIModel {
             
             return MultiSearchUIModel(
                 id: response.id, mediaType: response.mediaType, profilePath: response.profilePath, name: response.name,
-                                            originalTitle: response.originalTitle, overview: response.overview, posterPath: response.posterPath, releaseDate: response.releaseDate, title: response.title, voteAverage: response.voteAverage, voteCount: response.voteCount)
+                originalTitle: response.originalTitle, overview: response.overview, posterPath: response.posterPath, releaseDate: response.releaseDate, firstAirDate: response.firstAirDate, title: response.title, voteAverage: response.voteAverage, voteCount: response.voteCount)
             
         }
     }
