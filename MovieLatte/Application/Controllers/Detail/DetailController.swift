@@ -73,7 +73,7 @@ extension DetailController: UITableViewDataSource {
             cell.data = detailResult
             return cell
         }else {
-            let cell: DetailCell = tableView.dequeueReusableCell(withIdentifier: "detailCell", for: indexPath) as! DetailCell
+            let cell = tableView.dequeueReusableCell(withIdentifier: "detailCell", for: indexPath) as! DetailCell
             cell.detail = detailResult
             return cell
         }
