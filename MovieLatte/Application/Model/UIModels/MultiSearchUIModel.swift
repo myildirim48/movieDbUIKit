@@ -75,14 +75,14 @@ struct MultiSearchUIModel:Identifiable,Equatable{
     
     var yearTextUi : String {
         guard let date = DateFormatterStruct.dateFormatter.date(from: dateComing) else{
-            return "n / a"
+            return ""
         }
         return MultiSearchUIModel.yearFormatter.string(from: date)
     }
     
     var scoreTextUi: String {
         guard ratingTextUi.count > 0 else {
-            return "n / a"
+            return ""
         }
         return "\(ratingTextUi.count)/10"
     }

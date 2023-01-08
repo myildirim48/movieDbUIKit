@@ -97,14 +97,13 @@ extension SearchController: UITableViewDelegate,UITableViewDataSource,UISearchBa
         
         
         let mainStoryBoard = UIStoryboard(name: "Main", bundle: Bundle.main)
-              guard let detailVC = mainStoryBoard.instantiateViewController(withIdentifier: "detailViewTo") as? DetailController else {
+              guard let detailTvMovie = mainStoryBoard.instantiateViewController(withIdentifier: "detailViewTo") as? DetailController else {
                   return
               }
-            
-        detailVC.searchedId = data.id
-        detailVC.searchedMediaType = data.mediaType?.rawValue.lowercased() ?? ""
+        detailTvMovie.searchedId = data.id
+        detailTvMovie.searchedMediaType = data.mediaType?.rawValue.lowercased() ?? ""
               
-        navigationController?.pushViewController(detailVC, animated: true)
+        navigationController?.pushViewController(detailTvMovie, animated: true)
         
     }
     
